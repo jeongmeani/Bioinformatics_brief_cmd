@@ -1,3 +1,5 @@
+if refers to https://github.com/crazyhottommy/bioinformatics-one-liners
+
 get the sequences length distribution form a fastq file using awk
 zcat file.fastq.gz | awk 'NR%4 == 2 {lengths[length($0)]++} END {for (l in lengths) {print l, lengths[l]}}'  
 add barcode to 10x single cell R1 read
